@@ -7,19 +7,19 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
             <ul class="navbar-nav">
-                <li class="nav-item d-md-none d-block">
+                <li class="nav-item d-lg-none d-block">
                     <a class="nav-link {{ Route::is('admin.dashboard') ? 'active' : '' }}" href="{{ route('admin.dashboard') }}">
                         <i class="bi bi-speedometer pe-1"></i>
                         Dashboard
                     </a>
                 </li>
-                <li class="nav-item d-md-none d-block">
+                <li class="nav-item d-lg-none d-block">
                     <a class="nav-link {{ Route::is('admin.income') ? 'active' : '' }} {{ Route::is('admin.income.edit') ? 'active' : '' }}" href="{{ route('admin.income') }}">
                         <i class="bi bi-graph-up pe-1"></i>
                         Incomes
                     </a>
                 </li>
-                <li class="nav-item d-md-none d-block">
+                <li class="nav-item d-lg-none d-block">
                     <a class="nav-link {{ Route::is('admin.expense') ? 'active' : '' }} {{ Route::is('admin.expense.edit') ? 'active' : '' }}" href="{{ route('admin.expense') }}">
                         <i class="bi bi-graph-down pe-1"></i>  
                         Expenses

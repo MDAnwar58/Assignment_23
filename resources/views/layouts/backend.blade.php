@@ -43,6 +43,16 @@
             color: white;
         }
 
+        @media only screen and (max-width: 992px) {
+            .sideBar {
+                width: 0;
+                min-height: 0;
+            }
+
+            .main-content {
+                width: 100%;
+            }
+        }
         @media only screen and (max-width: 768px) {
             .sideBar {
                 width: 100%;
@@ -107,7 +117,7 @@
 <body>
     @include('partials.navbar')
     <main class="d-md-flex">
-        <div class="sideBar bg-info">
+        <div class="sideBar bg-info d-lg-block d-none">
             @include('partials.sidebar')
         </div>
         <div class="main-content">

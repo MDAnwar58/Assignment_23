@@ -25,24 +25,37 @@
                     data-bs-target="#income_modal">Added Income</button>
             </h4>
             <div class="table-responsive card-body p-4 border border-2 border-info">
-                <div class="d-flex justify-content-between py-2">
+                <div class="py-2">
                     <form action="{{ route('admin.income') }}" method="GET">
-                        <div class="form-group">
-                            <select name="category">
-                                <option value="">(Category Filter)</option>
-                                @foreach ($categories as $exponse_category)
-                                    <option value="{{ $exponse_category->category }}">{{ $exponse_category->category }}
-                                    </option>
-                                @endforeach
-                            </select>
-                            <label for="start_date" class="ps-4">Start Date</label>
-                            <input type="date" name="start_date">
-                            <label for="end_date" class="ps-4">End Date</label>
-                            <input type="date" name="end_date">
-                            <button class="btn btn-sm btn-info" style="padding:1px 5px;">Filter</button>
+                        <div class="row">
+                            <div class="col-lg-10 col-md-9">
+                                <div class="row">
+                                    <div class="col-xl-3 col-lg-2 col-md-12">
+                                        <select name="category">
+                                            <option value="">(Category Filter)</option>
+                                            @foreach ($categories as $exponse_category)
+                                                <option value="{{ $exponse_category->category }}">
+                                                    {{ $exponse_category->category }}
+                                                </option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-5 col-md-12 text-lg-end text-start">
+                                        <label for="start_date">Start Date</label>
+                                        <input type="date" name="start_date">
+                                    </div>
+                                    <div class="col-xl-5 col-lg-5 col-md-12">
+                                        <label for="end_date">End Date</label>
+                                        <input type="date" name="end_date">
+                                        <button class="btn btn-sm btn-info" style="padding:1px 5px;">Filter</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-3 text-end">
+                                <a href="{{ route('admin.income') }}" class="btn btn-sm btn-danger">Reset Table</a>
+                            </div>
                         </div>
                     </form>
-                    <a href="{{ route('admin.income') }}" class="btn btn-sm btn-danger">Reset Table</a>
                 </div>
                 <table class="table table-bordered">
                     <thead>

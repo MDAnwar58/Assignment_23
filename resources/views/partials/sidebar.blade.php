@@ -1,4 +1,4 @@
-<ul class="nav flex-column mt-md-5 d-md-block d-none">
+<ul class="nav flex-column mt-md-5">
     <li class="nav-item">
         <a class="nav-link {{ Route::is('admin.dashboard') ? 'active' : '' }}" href="{{ route('admin.dashboard') }}">
             <i class="bi bi-speedometer pe-1"></i>
