@@ -2,5 +2,7 @@
 @section('title', 'Welcome')
 
 @section('content')
-<h1>Hello, world!</h1>
+<div class="container">
+    <h1>Welcome this site you want to access income and expense admin panel <a href="{{ route('admin.dashboard') }}">click here</a></h1>
+</div>
 @endsection

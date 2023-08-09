@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.sideBar {
+    width: 15%;
+    min-height: 100vh;
+}
+
+.main-content {
+    width: 85%;
+}
+
+.navbar .navbar-brand {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.nav .nav-item .nav-link {
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.nav .nav-item .nav-link.active {
+    background-color: green;
+    color: white;
+}
+
+@media only screen and (max-width: 992px) {
+    .sideBar {
+        width: 0;
+        min-height: 0;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .sideBar {
+        width: 100%;
+        min-height: auto;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+}
+
+.main-content h2 {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.main-content h4 span {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.main-content h4 span span {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.modal-dialog .modal-content .modal-header h1 span {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.modal-dialog .modal-content .modal-header button i {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.expense_pagination .pagination {
+    --bs-pagination-color: crimson;
+    --bs-pagination-hover-color: var(--bs-link-hover-color);
+    --bs-pagination-active-color: #fff;
+    --bs-pagination-active-bg: crimson;
+    --bs-pagination-active-border-color: crimson;
+    --bs-pagination-disabled-color: gray;
+}
+.income_pagination .pagination {
+    --bs-pagination-color: rgb(51, 204, 255);
+    --bs-pagination-hover-color: var(--bs-link-hover-color);
+    --bs-pagination-active-color: #fff;
+    --bs-pagination-active-bg: rgb(51, 204, 255);
+    --bs-pagination-active-border-color: rgb(51, 204, 255);
+    --bs-pagination-disabled-color: gray;
+}
+.dashboard .icon img {
+    width: 80px;
+}
+.dashboard .icon i {
+    font-size: 40px;
+}
